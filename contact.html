@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Sneha Sonawane</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 20px;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        color: #111;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      input,
+      textarea {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+      button {
+        background-color: #0077cc;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #005fa3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Sneha Sonawane</h1>
+    <p>
+      If you’d like to get in touch, please fill out the form below or send an
+      email directly.
+    </p>
+
+    <form action="send_mail.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Your Message"
+        required
+      ></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p style="text-align: center; margin-top: 40px">
+      Or email me at:
+      <a href="mailto:snehasonawane509@gmail.com">snehasonawane509@gmail.com</a>
+    </p>
+
+    <p style="text-align: center; margin-top: 40px">
+      © 2025 Sneha Sonawane. All Rights Reserved.
+    </p>
+  </body>
+</html>
