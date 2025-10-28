@@ -2455,7 +2455,19 @@
       </div>
     </div>
 
+<script>
+// Disable right-click
+document.addEventListener("contextmenu", event => event.preventDefault());
 
+// Disable common inspect shortcuts (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U)
+document.addEventListener("keydown", event => {
+  if (event.key === "F12" ||
+      (event.ctrlKey && event.shiftKey && ["I", "J", "C"].includes(event.key)) ||
+      (event.ctrlKey && event.key === "U")) {
+    event.preventDefault();
+  }
+});
+</script>
 
     <script>
 document.getElementById("contact-form").addEventListener("submit", function(event) {
